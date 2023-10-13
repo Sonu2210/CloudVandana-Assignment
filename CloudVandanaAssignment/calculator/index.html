@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <table class="container">
+        <tr>
+            <th colspan="3">
+                <input type="text" id="result" value="" readonly>
+            </th>
+            <td onclick="clearResult()">AC</td>
+        </tr>
+        <tr>
+            <td onclick="appendToResult('9')">9</td>
+            <td onclick="appendToResult('8')">8</td>
+            <td onclick="appendToResult('7')">7</td>
+            <td onclick="appendOperator('+')">+</td>
+        </tr>
+        <tr>
+            <td onclick="appendToResult('6')">6</td>
+            <td onclick="appendToResult('5')">5</td>
+            <td onclick="appendToResult('4')">4</td>
+            <td onclick="appendOperator('-')">-</td>
+        </tr>
+        <tr>
+            <td onclick="appendToResult('3')">3</td>
+            <td onclick="appendToResult('2')">2</td>
+            <td onclick="appendToResult('1')">1</td>
+            <td onclick="appendOperator('*')">&times;</td>
+        </tr>
+        <tr>
+            <td onclick="appendToResult('.')">.</td>
+            <td onclick="appendToResult('0')">0</td>
+            <td id="calculate" onclick="calculateResult()">=</td>
+            <td onclick="appendOperator('/')">/</td>
+        </tr>
+    </table>
+
+    
+  <script src="myScript.js"></script>
+</body>
+</html>
